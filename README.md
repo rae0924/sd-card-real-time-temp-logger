@@ -2,6 +2,12 @@
 STM32 project that logs temperature and time into an SD card. Created to record the temperature of my room during power outages caused by snowstorms in Texas. Used an I2C serial 
 RTC, I2C temperature sensor, and an SD card using SPI with [FatFs middleware].
 
+## Temperature Logs
+
+![](sample/temp_log_sample.png)
+
+Above shows log file from my SD card that the microcontroller logged the temperature and time into. The first columns show the temperature in Celsius of my room and the second column shows the time in mm-dd hh:mm:ss format. The image includes the logs of the lowest temperatures that were logged in my room, which was about 12 degrees Celsius. The rest of the log file is in the sample directory. I could only record in short, intermitten periods because I did not have ample power supply.
+
 ## Data
 
 Here is a sample of an I2C communication between the STM32 and the serial RTC collected from my logic analyzer:
